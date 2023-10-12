@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.winnerWrapper {
+  display: flex;
+  position: relative;
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.2;  
+  background: repeating-radial-gradient(var(--background-gradient-end), var(--background-gradient-start) 50px);
+}
+
+.decision {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.decision h2 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 150px;
+}
+.result p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.playAgainBtn {
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  color: var(--dark-text);
+  background: white;
+  border-radius: 4px;
+  height: 35px;
+  width: 115px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

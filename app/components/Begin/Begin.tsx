@@ -1,10 +1,15 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import styles from './begin.module.css'
-import Image from 'next/image'
-import IconImage from '../IconImage/IconImage'
 import Option from '../Option/Option'
+import { useDispatch } from '@/lib/redux'
+import { playAgain } from '@/lib/redux/slices/gameSlice'
 
 function Begin() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(playAgain())
+  }, [])
   return (
     <div data-test-name="begin-container" className={styles.container}>
       <div className={styles.scissors}>
