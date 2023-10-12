@@ -1,8 +1,8 @@
 /* Components */
-import { Counter } from './components/Counter/Counter'
+import Begin from './components/Begin/Begin'
 
 export default function IndexPage() {
-  return <Counter />
+  return <Begin />
 }
 
 export const metadata = {
