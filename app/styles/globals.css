@@ -31,6 +31,7 @@ body {
   grid-template-rows: 150px auto;
   gap: 50px;
   justify-content: center;
+  justify-items: center;
   margin: 0;
   padding: 50px 0;
   min-height: 100vh;

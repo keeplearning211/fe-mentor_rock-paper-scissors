@@ -46,7 +46,7 @@ export default function ResultPage() {
       {result &&
         <div className={styles.result}>
           <p>{getResultLabel(result)}</p>
-          <button className={styles.playAgainBtn} onClick={onPlayAgain}>Play again</button>
+          <button aria-label="play again button" className={styles.playAgainBtn} onClick={onPlayAgain}>Play again</button>
 
         </div>
       }
