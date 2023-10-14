@@ -1,8 +1,10 @@
 .container {
   width: 100%;
-  height: 90%;
-  display: grid;
-  place-items: center;
+  height: 94%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
   background-image: url('/images/bg-triangle.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -10,13 +12,33 @@
 
 .scissors {
   position: absolute;
-  translate: 143px -134px;
+  translate: 138px -130px;
 }
 .paper {
   position: absolute;
-  translate: -143px -134px;
+  translate: -138px -130px;
 }
 .rock {
   position: absolute;
-  translate: 0px 113px;
+  translate: 0px 100px;
+}
+
+@media (min-width: 900px){
+  .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 94%;
+  }
+
+  .scissors {
+    translate: 138px -130px;
+  }
+  .paper {
+    translate: -138px -130px;
+  }
+  .rock {
+    translate: 0px 100px;
+  }
 }

@@ -9,10 +9,11 @@ function Header() {
   const score = useSelector(selectScore)
   return (
     <header className={styles.header}>
-      <Image priority src="images/logo.svg" alt="game logo" width={180} height={100} />
+      <Image priority src="images/logo.svg" alt="game logo" width={163} height={100} />
       <div className={styles.score}>
-        <span>SCORE</span>
-        {score}
+        <span className={styles.text}>SCORE</span>
+        <span className={styles.number}>{12}</span>
+
       </div>
     </header>
   )

@@ -3,20 +3,21 @@
   justify-content: flex-end;
   width: 100vw;
   max-width: 1366px;
-  padding-right: 40px ;
+  padding-right: 32px ;
 }
 
 .rulesBtn {
   font-size: 0.75rem;
-  font-weight: var(--fw-bold);
   color: white;
   background: transparent;
-  border-radius: 4px;
-  height: 35px;
-  width: 100px;
+  border-radius: 8px;
+  /* height: 40px;
+  width: 126px; */
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid;
+  padding: 11px 10px 9px 10px;
+  letter-spacing: 1px;
 }
 
 /* styles for modal */
@@ -61,4 +62,14 @@
   font-size: 2.25rem;
   font-weight: var(--fw-semi-bold);
   margin: 0;
+}
+
+@media (min-width: 900px) {
+  .rulesBtn {
+    font-size: 15px;
+    height: 40px;
+    width: 127px;
+    padding: 10px 11px 9px 10px;
+    letter-spacing: 1px;
+  }
 }

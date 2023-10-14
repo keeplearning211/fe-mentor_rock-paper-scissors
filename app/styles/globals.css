@@ -29,7 +29,6 @@
 body {
   display: grid;
   grid-template-rows: 150px auto;
-  gap: 50px;
   justify-content: center;
   justify-items: center;
   margin: 0;
@@ -47,4 +46,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media (min-width: 900px) {
+  body {
+    padding: 46px 0;
+    gap: 105px;
+  }
 }
