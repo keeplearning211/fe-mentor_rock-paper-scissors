@@ -1,22 +1,23 @@
 .rulesBtnWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100vw;
   max-width: 1366px;
-  padding-right: 32px ;
 }
 
 .rulesBtn {
-  font-size: 0.75rem;
   color: white;
   background: transparent;
   border-radius: 8px;
-  /* height: 40px;
-  width: 126px; */
+
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid;
-  padding: 11px 10px 9px 10px;
+
+  font-size: 15px;
+  height: 40px;
+  width: 127px;
+  padding: 10px 11px 9px 10px;
   letter-spacing: 1px;
 }
 
@@ -33,26 +34,30 @@
   overflow-y: hidden;
 }
 
-.modalContainer .modal {
+ .modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 7rem;
   padding: 1.5rem 1.75rem;
-  width: 400px;
-  height: 400px;
+  padding-top: 90px;
+  width: 100vw;
+  height: 100vh;
   border-radius: 8px;
   background-color: white;
+  text-transform: uppercase;
 }
 
 .modalHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .closeBtn {
+  position: absolute;
+  top: 88%;
   cursor: pointer;
   border: none;
 }
@@ -65,11 +70,41 @@
 }
 
 @media (min-width: 900px) {
+  .rulesBtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 32px ;
+  }
+
   .rulesBtn {
     font-size: 15px;
     height: 40px;
     width: 127px;
     padding: 10px 11px 9px 10px;
     letter-spacing: 1px;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem 1.75rem;
+    width: 400px;
+    height: 413px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .closeBtn {
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    border: none;
   }
 }

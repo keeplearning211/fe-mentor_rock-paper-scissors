@@ -1,26 +1,27 @@
 .container {
   width: 100%;
-  height: 94%;
+  height: 54vh;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background-image: url('/images/bg-triangle.svg');
+  background-size: 203px 180px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .scissors {
   position: absolute;
-  translate: 138px -130px;
+  translate: 90px -84px;
 }
 .paper {
   position: absolute;
-  translate: -138px -130px;
+  translate: -90px -84px;
 }
 .rock {
   position: absolute;
-  translate: 0px 100px;
+  translate: 0px 60px;
 }
 
 @media (min-width: 900px){
@@ -29,16 +30,18 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: 94%;
+    height: 95%;
+    background-size: 313px 278px;
+    background-position: center 62%;
   }
 
   .scissors {
-    translate: 138px -130px;
+    translate: 138px -109px;
   }
   .paper {
-    translate: -138px -130px;
+    translate: -138px -109px;
   }
   .rock {
-    translate: 0px 100px;
+    translate: 0px 119px;
   }
 }

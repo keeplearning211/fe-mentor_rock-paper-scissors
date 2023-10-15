@@ -2,10 +2,13 @@
 
 :root {
   /* Primary Colors */
+  --scissors-gradient-shadow: hsl(27.47, 72.81%, 44.71%);
   --scissors-gradient-start: hsl(39, 89%, 40%);
   --scissors-gradient-end: hsl(40, 84%, 53%);
+  --paper-gradient-shadow: hsl(229.02, 64.02%, 46.86%);
   --paper-gradient-start: hsl(230, 89%, 40%);
   --paper-gradient-end: hsl(230, 89%, 65%);
+  --rock-gradient-shadow: hsl(347.91, 75.28%, 34.9%);
   --rock-gradient-start: hsl(349, 71%, 40%);
   --rock-gradient-end: hsl(349, 70%, 56%);
   --lizard-gradient-start: hsl(261, 73%, 60%);
@@ -17,6 +20,7 @@
   --dark-text: hsl(229, 25%, 31%);
   --score-text: hsl(229, 64%, 46%);
   --header-outline: hsl(217, 16%, 45%);
+  --border-inset: hsl(227, 25%, 78%);
 
   /* Background Colors */
   --background-gradient-start: hsl(214, 47%, 23%);
@@ -32,11 +36,18 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 0;
-  padding: 50px 0;
+  padding: 30px 0;
   min-height: 100vh;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: var(--fw-semi-bold);
+  overflow: hidden;
   background: linear-gradient(var(--background-gradient-start), var(--background-gradient-end));
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 70px;
 }
 
 a {
@@ -52,6 +63,10 @@ a {
 @media (min-width: 900px) {
   body {
     padding: 46px 0;
-    gap: 105px;
+    gap: 50px;
+  }
+
+  main {
+    display: block;
   }
 }

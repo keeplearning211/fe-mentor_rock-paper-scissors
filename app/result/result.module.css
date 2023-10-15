@@ -1,8 +1,12 @@
 .container {
-  display: flex;
+  display: grid;
+  grid-template-areas: 
+  'userPicked appPicked'
+  'playAgain playAgain';
   justify-content: center;
-  gap: 30px;
-  height: 100%;
+  gap: 0 45px;
+    height: 75%;
+    padding-top: 42px;
 }
 
 .winnerWrapper {
@@ -15,48 +19,139 @@
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   z-index: -1;
   border-radius: 50%;
   opacity: 0.2;  
-  background: repeating-radial-gradient(var(--background-gradient-end), var(--background-gradient-start) 50px);
+  background: repeating-radial-gradient(var(--background-gradient-end), var(--background-gradient-start) 40px);
+}
+
+.userDecision {
+  grid-area: userPicked;
+}
+.appDecision {
+  grid-area: appPicked;
 }
 
 .decision {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   align-items: center;
+  gap: 8px;
 }
 
-.decision h2 {
-  text-transform: uppercase;
+.decision p {
+  font-size: 16px;
+  letter-spacing: 1.5px;
   color: white;
+  text-transform: uppercase;
 }
 
 .result {
+  grid-area: playAgain;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   color: white;
   text-transform: uppercase;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 .result p {
-  font-size: 2rem;
+  font-size: 57px;
   margin: 0;
 }
 
 .playAgainBtn {
-  font-size: 0.75rem;
-  font-weight: var(--fw-bold);
+  font-size: 13px;
+  font-weight: var(--fw-semi-bold);
   color: var(--dark-text);
   background: white;
   border-radius: 4px;
-  height: 35px;
-  width: 115px;
+  height: 53px;
+  width: 222px;
   text-transform: uppercase;
   cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: none;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    height: 95%;
+    padding-top: 25px;
+  }
+  
+  .winnerWrapper {
+    display: flex;
+    position: relative;
+  }
+  
+  .winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 750px;
+    height: 750px;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.2;  
+    background: repeating-radial-gradient(var(--background-gradient-end), var(--background-gradient-start) 50px);
+  }
+  .userDecision {
+    position: relative;
+    right: 14px;
+  }
+  .decision {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 66px;
+    align-items: center;
+  }
+  
+  .decision p {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+  }
+  
+  .result {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 158px;
+  }
+  .result p {
+    font-size: 3.6rem;
+    margin: 0;
+  }
+  
+  .playAgainBtn {
+    font-size: 13px;
+    font-weight: var(--fw-semi-bold);
+    color: var(--dark-text);
+    background: white;
+    border-radius: 4px;
+    height: 50px;
+    width: 222px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+  }
+  
 }

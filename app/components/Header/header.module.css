@@ -3,32 +3,38 @@
   justify-content: space-between;
   align-items: center;
   
-  width: 702px;
-  height: 150px;
-  padding: 10px;
+  width: 84.5vw;
+  height: 100px;
+  padding: 21px 11px 20px 20px;
   border-radius: 10px;
   color: white;
  
   border: 4px solid var(--header-outline);
 }
 
+.logo {
+  width: 86px;
+  height: 50px;
+}
+
 .score {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 110px;
-  width: 130px;
+  height: 70px;
+  width: 80px;
 
-  font-size: 4rem;
   font-weight: var(--fw-bold);
   color: var(--dark-text);
   background-color: white;
-  border-radius: 10px;
+  border-radius: 4px;
+  padding-top: 10px;
 }
 
 .text {
-  font-size: 18px;
+  font-size: 8px;
   letter-spacing: 2px;
+  color: var(--score-tex);
 }
 
 .number {
@@ -36,11 +42,11 @@
   letter-spacing: 2px;
   letter-spacing: 0px; */
 
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: var(--fw-bold);
   color: var(--dark-text);
   /* background-color: #d62121; */
-  line-height: 62px
+  line-height: 43px
 }
 
 @media (min-width: 900px) {
@@ -48,12 +54,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 13px;
     width: 702px;
     height: 153px;
     padding: 10px 20px 10px 27px;
     border-radius: 10px;
     color: white;
+  }
+  .logo {
+    width: 163px;
+    height: 100px;
   }
 
   .score {
@@ -64,6 +73,7 @@
     background-color: white;
     border-radius: 8px;
     padding-top: 16px;
+    gap: 9px;
   }
 
   .text {

@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import { OptionSizeType } from '../Option/types'
 
 export type IconName = 'close' | 'paper' | 'rock' | 'scissors' | 'rules'
 interface IconImageProps {
   name: IconName,
-  size: number,
+  size?: number,
 }
 
 function IconImage({ name, size }: IconImageProps) {

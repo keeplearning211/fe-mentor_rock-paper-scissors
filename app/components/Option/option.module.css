@@ -1,11 +1,9 @@
-
 .option {
   display: grid;
   place-content: center;
-  background-color: white ;
+  background-color: white;
   border-radius: 50%;
   border: solid;
-  box-shadow: 0px 10px 0px -3px var(--scissors-gradient-start), 0px 7px var(--header-outline) inset;
 }
 
 .clickable {
@@ -13,25 +11,87 @@
 }
 
 .medium {
-  width: 200px;
-  height: 200px;
-  border-width: 26px;
+  width: 123px;
+  height: 123px;
+  border-width: 15px;
 }
+
 .large {
-  width: 210px;
-  height: 210px;
-  border-width: 28px;
+  width: 138px;
+  height: 138px;
+  border-width: 15px;
 }
 
 .scissors {
   border-color: var(--scissors-gradient-end);
-  box-shadow: 0px 10px 0px -3px var(--scissors-gradient-start), 0px 7px var(--header-outline) inset;
+  box-shadow: 0px 12px 0px -3px var(--scissors-gradient-shadow), 0px 7px var(--border-inset) inset;
 }
+
 .paper {
   border-color: var(--paper-gradient-end);
-  box-shadow: 0px 10px 0px -3px var(--paper-gradient-start), 0px 7px var(--header-outline) inset;
+  box-shadow: 0px 12px 0px -3px var(--paper-gradient-shadow), 0px 7px var(--border-inset) inset;
 }
+
+
+.scissors img {
+  width: 51px;
+  height: 58px;
+  scale: 0.9;
+}
+.paper img {
+  width: 49px;
+  height: 59px;
+  scale: 0.9;
+}
+.rock img {
+  width: 48px;
+  height: 48px;
+  scale: 0.9;
+}
+
 .rock {
   border-color: var(--rock-gradient-end);
-  box-shadow: 0px 10px 0px -3px var(--rock-gradient-start), 0px 7px var(--header-outline) inset;
+  box-shadow: 0px 12px 0px -3px var(--rock-gradient-shadow), 0px 7px var(--border-inset) inset;
+}
+
+@media (min-width: 900px) {
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .medium {
+    width: 200px;
+    height: 200px;
+    border-width: 26px;
+  }
+
+  .large {
+    width: 292px;
+    height: 292px;
+    border-width: 37px;
+  }
+
+  .scissors {
+    border-color: var(--scissors-gradient-end);
+    box-shadow: 0px 10px 0px -3px var(--scissors-gradient-shadow), 0px 7px var(--border-inset) inset;
+  }
+
+  .paper {
+    border-color: var(--paper-gradient-end);
+    box-shadow: 0px 10px 0px -3px var(--paper-gradient-shadow), 0px 7px var(--border-inset) inset;
+  }
+
+  .rock {
+    border-color: var(--rock-gradient-end);
+    box-shadow: 0px 10px 0px -3px var(--rock-gradient-shadow), 0px 7px var(--border-inset) inset;
+  }
+
+  .medium.scissors img, .medium.paper img, .medium.rock img  {
+    scale: 1.4;
+  }
+  .large.scissors img, .large.paper img, .large.rock img  {
+    scale: 2;
+  }
+
 }

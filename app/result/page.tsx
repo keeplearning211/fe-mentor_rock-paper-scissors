@@ -34,8 +34,8 @@ export default function ResultPage() {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.decision}>
-        <h2>You Picked</h2>
+      <div className={`${styles.decision} ${styles.userDecision}`}>
+        <p>You Picked</p>
         {userDecision &&
           <div className={styles.winnerWrapper}>
             <Option name={userDecision} size="large" />
@@ -50,8 +50,8 @@ export default function ResultPage() {
 
         </div>
       }
-      <div className={styles.decision}>
-        <h2>The House Picked</h2>
+      <div className={`${styles.decision} ${styles.appDecision}`}>
+        <p>The House Picked</p>
         {appDecision &&
           <div className={styles.winnerWrapper}>
             <Option name={appDecision} size="large" />
