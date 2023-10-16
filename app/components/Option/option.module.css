@@ -62,7 +62,7 @@
 
   .medium {
     width: 200px;
-    height: 200px;
+    height: 198px;
     border-width: 26px;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .medium.scissors img, .medium.paper img, .medium.rock img  {
-    scale: 1.4;
+    scale: 1.35;
   }
   .large.scissors img, .large.paper img, .large.rock img  {
     scale: 2;
