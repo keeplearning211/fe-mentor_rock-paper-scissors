@@ -8,6 +8,9 @@ import { useEffect } from 'react';
 
 const TIMEOUT = 1000
 export default function ResultPage() {
+  if (process.env.NODE_ENV === 'production' && typeof window === 'undefined') {
+    return null
+  }
   const dispatch = useDispatch()
   const userDecision = useSelector(selectUserDecision)
   const appDecision = useSelector(selectAppDecision)
