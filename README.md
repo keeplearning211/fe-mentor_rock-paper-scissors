@@ -1,29 +1,50 @@
-# Redux Toolkit TypeScript Example
+# Frontend Mentor - Rock, Paper, Scissors solution
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+## Table of contents
 
-## Deploy your own
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Overview
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
+### The challenge
 
-## How to use
+Users should be able to:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
-```bash
-npx create-next-app --example with-redux with-redux-app
-```
+### Screenshot
 
-```bash
-yarn create next-app --example with-redux with-redux-app
-```
+![Solution Screenshot](./public/images/ScreenShot1.png)
+![Solution Screenshot](./public/images/ScreenShot2.png)
+![Solution Screenshot](./public/images/ScreenShot3.png)
+![Solution Screenshot](./public/images/ScreenShot4.png)
 
-```bash
-pnpm create next-app --example with-redux with-redux-app
-```
+### Links
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Solution URL: [Add solution URL here](#)
+- Live Site URL: [https://rock-paper-scissors-pa7o791cg-dong211.vercel.app/](https://rock-paper-scissors-pa7o791cg-dong211.vercel.app/)
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library for building user interfaces
+- [NextJs](https://nextjs.org/) - All the tools you need to make the Web. Faster.
+- [Redux toolkit](https://redux-toolkit.js.org/) - The official, opinionated, batteries-included toolset for efficient Redux development.
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static types.
+
+
+## Author
+
+- Frontend Mentor - [keeplearning211](https://www.frontendmentor.io/profile/keeplearning211)
