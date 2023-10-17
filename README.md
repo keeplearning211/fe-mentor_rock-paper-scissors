@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](#)
-- Live Site URL: [https://rock-paper-scissors-pa7o791cg-dong211.vercel.app/](https://rock-paper-scissors-pa7o791cg-dong211.vercel.app/)
+- Solution URL: [https://github.com/keeplearning211/fe-mentor_rock-paper-scissors](https://github.com/keeplearning211/fe-mentor_rock-paper-scissors)
+- Live Site URL: [https://rock-paper-scissors-zeta-puce.vercel.app/](https://rock-paper-scissors-zeta-puce.vercel.app/)
 
 ## My process
 

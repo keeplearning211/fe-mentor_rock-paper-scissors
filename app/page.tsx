@@ -7,4 +7,5 @@ export default function IndexPage() {
 
 export const metadata = {
   title: 'Rock-paper-scissors',
+  description: 'This is a rock-paper-scissors game',
 }
